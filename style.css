@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: grey;
+    font-family: Lato , sans-serif;
+}
+
+/* headings and logo */
+
+h1, h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: green;
+}
+
+#logo {
+    float: left;
+    text-decoration: none;
+    font-size: 250%;
+    margin-left: 25px;
+}
+
+/* navigation links */
+
+#navbar {
+    font-size: 110%;
+    letter-spacing: 4px;
+    font-family: lato, sans-serif;
+    color: grey;
+}
+
+#navbar, #logo {
+    line-height: 75px;
+}
+
+#navbar li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: green;
+
+}
+
+#navbar a:hover {
+    border-bottom: 1px solid grey;
+} 
+
+.active {
+    border-bottom: 1px solid grey;
+}
+
+/* hero image */
+#hero-out {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: white;
+}
+
+#hero-img {
+    height: 800px;
+    width: 100%;
+    background: url('./Yoga/pexels-kampus-production-6698513.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* animation zoom effect */
+    animation-name: hero-zoom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+/* hero zoom */
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#cover-text {
+    font-size: 150%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 300px;
+    height: 300px;
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(0, 164, 71, 0.7);
+    bottom: 150px;
+    left: 50px;
+    position: absolute;
+}
+
+/* Reasons To Meditate */
+
+.ethos {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 150%;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 33.33%;
+    padding: 10px;
+}
+
+.col h3 {
+    color: green;
+}
+
+/* Online Classes */
+
+.online {
+    margin-top: 80px;
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./Yoga/home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.online-content {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.online-content h2 {
+    font-size: 300%;
+    margin: 20px;
+}
+
+.online-content p {
+    color: white;
+    font-size: 150%;
+}
+
+.online-content h4 {
+    margin: 5px;
+    color: white;
+    font-size: 150%;
+}
+ 
+.online-content a {
+    border: 1px solid green;
+    background: green;
+    margin: 30px;
+    height: 50px;
+    width: 80px;
+    font-family: Oswald, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.online-content a:hover {
+    background: white;
+    color: green;
+}
+
+/* footer */
+
+footer {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 300%;
+    text-transform: capitalize;
+    line-height: 25px;
+    color: green;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 30px ;
+    line-height: 30px;
+    font-style: italic;
+    font-size: 150%
+}
+
+/* social media */
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials li {
+    color: green;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials i {
+    font-size: 200%;
+    margin: 2%;
+    padding: 20px;
+}
+
+/* Photo Gallery */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.gallery-head {
+    width: 500px;
+    padding-bottom: 40px;
+
+}
+
+.gallery-head h5 {
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 5px solid green;
+    padding-bottom: 10px;
+    font-family: lato, sans-serif;
+}
+
+.gallery-head h5 span {
+    font-weight: 100;
+}
+
+.gallery .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery .box .images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gallery .box .images img {
+    width: 100%;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+/* Background Image for Sign Up */
+
+.signupnow {
+    padding-top: 80px;
+}
+
+.boximg {
+    height: 1000px;
+    width: 100%;
+    background: url(backimg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: inherit;
+}
+
+/* Sign Up Form */
+
+.formpos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    font-family: Lato , sans-serif;
+    color: white;
+
+}
+
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+.top span {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.top header {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+.input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.input-field input {
+    text-align: center;
+    color: white;
+    font-size: 100%;
+
+}
+
+.input-field i {
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.submit {
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background:  rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover {
+    box-shadow: 1px 5px 7px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: white;
+    margin-top: 10px;
+}
+
+.left{
+    display: flex;
+}
+
+label a {
+    color: white;
+    text-decoration: none;
+}
