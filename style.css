@@ -418,4 +418,10 @@ padding-top: 350px;
 .thankyou p {
     font-size: 20px;
     padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+.thankyou a {
+    text-decoration: none;
+    
 }
