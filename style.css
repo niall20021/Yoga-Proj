@@ -404,3 +404,9 @@ label a {
     color: white;
     text-decoration: none;
 }
+
+/* Thank you message */
+.thankyou {
+text-align: center;
+padding-top: 500px;
+}
