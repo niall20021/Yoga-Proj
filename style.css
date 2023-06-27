@@ -408,5 +408,14 @@ label a {
 /* Thank you message */
 .thankyou {
 text-align: center;
-padding-top: 500px;
+padding-top: 350px;
+}
+
+.thankyou h1 {
+    font-size: 40px;
+}
+
+.thankyou p {
+    font-size: 20px;
+    padding-top: 10px;
 }
