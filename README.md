@@ -77,6 +77,12 @@ whether that be our online classes timetable or links to our social media we wou
   - Adding a shop to sell yoga mats and other yoga and meditation related products with our Meditation Lounge branding
  to grow the website.
  
+ # Programmes Used
+ - I used github to 'commit' and 'push' my project ensuring my progress wasn't lost.
+
+ - I also used mulitple HTML and CSS testers to make sure my code was good and there were no errors as already stated.
+
+
 # Acknowledgements
 
   - I would like to thank my mentor Spence for helping me whenever i needed with my project
